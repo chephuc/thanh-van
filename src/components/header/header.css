@@ -25,6 +25,7 @@ header {
 }
 
 .nav__menu a {
+    color: var(--color-black);
     transition: var(--transition);
     display: flex;
     align-items: center;
