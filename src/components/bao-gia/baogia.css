@@ -1,0 +1,11 @@
+#baogia {
+    background-color: #f4f6ff;
+}
+
+#baogia img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}

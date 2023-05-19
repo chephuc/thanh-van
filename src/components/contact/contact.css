@@ -1,39 +1,25 @@
+#contact{
+    display: flex;
+    background-color: #4d6bf0;
+    padding: 3% 0;
+}
+
 .container.contact__container {
     width: 58%;
     display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
+    grid-template-columns: 50% 55%;
+    gap: 8%;
 }
 
 .contact__options {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    margin-top: 100px;
 }
 
-.contact__option {
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transition:var(--transition);
-}
-
-.contact__option:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-}
-
-.contact__option-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.contact__option a {
-    margin-top: 0.7rem;
-    display: inline-block;
-    font-size: 0.8rem;
+.contact__options p, .contact__options h2 {
+    color: var(--color-white);
 }
 
 /* ============================= FORM ================================= */
@@ -42,16 +28,33 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    background-color: var(--color-white);
+    padding: 5%;
+    text-align: center;
+    border-radius: 5%;
 }
 
-input, textarea {
+form button {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, select {
     width: 100%;
-    padding: 1.5rem;
+    padding: 0.6rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    border: 1px solid #aca8a8;
     resize: none;
     color: var(--color-black);
+    margin-bottom: -10px;
+}
+
+label {
+    display: flex;
+    justify-content:left;
+    margin-bottom: -20px;
 }
 
 @media screen and (max-width: 1024px) {

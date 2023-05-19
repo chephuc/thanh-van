@@ -1,37 +1,38 @@
-import React from 'react'
-import './footer.css'
-import {FaFacebookF} from 'react-icons/fa'
-import {FiInstagram} from 'react-icons/fi'
-import {IoLogoTwitter} from 'react-icons/io'
+import React from "react";
+import "./footer.css";
+import logo from "../../assets/Logo_MISA.png";
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>
-        <img src="https://media.istockphoto.com/vectors/fist-with-blue-lightning-illustration-vector-id1209306577?k=20&m=1209306577&s=170667a&w=0&h=6Exb3zEJoJjiT_EyjHx4IPoL9ijmQVI_PugnD71xLVQ=" alt="" />
-      </a>
+      {/* <div className="footer__content">
+        <img src={logo} alt="" />
+        <h3>CÔNG TY CỔ PHẦN MISA</h3>
+        <h5>VĂN PHÒNG ĐẠI DIỆN CÔNG TY CỔ PHẦN MISA TẠI THÀNH PHỐ HCM </h5>
+        <p>
+          Tòa nhà MISA, Lô 5, Công viên phần mềm Quang Trung, 49 Tô Ký, Phường
+          Tân Chánh Hiệp, Q12, Tp.HCM
+        </p>
+      </div> */}
 
-      <ul className='permalinks'>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        {/* <li><a href="#testimonials">Testimonials</a></li> */}
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <div className='footer__socials'>
-        <a href="https://www.facebook.com/phuc.che.1997" target="_blank"><FaFacebookF/></a>
-        <a href="https://www.instagram.com/phuc.che.97" target="_blank"><FiInstagram/></a>
-        <a href="http://twitter.com" target="_blank"><IoLogoTwitter/></a>
+      <div className="footer__cards">
+        <article className="footer__card">
+          <img src={logo} alt="" />
+          <h4>VĂN PHÒNG ĐẠI DIỆN CÔNG TY CỔ PHẦN MISA TẠI THÀNH PHỐ HCM </h4>
+          <p>
+            Tòa nhà MISA, Lô 5, Công viên phần mềm Quang Trung, 49 Tô Ký, Phường
+            Tân Chánh Hiệp, Q12, Tp.HCM
+          </p>
+        </article>
+        <article className="footer__card"></article>
+        <article className="footer__card"></article>
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; Phuc Che. All rights reserved.</small>
+        <small>&copy; Thanh Van. All rights reserved.</small>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
