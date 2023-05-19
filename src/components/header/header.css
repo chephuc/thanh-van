@@ -53,9 +53,9 @@ header {
     }
     .nav__menu {
         position: fixed;
-        top: 8vh;
+        top: 8.5vh;
         right: 0;
-        height: 40vh;
+        height: 50vh;
         width: 100%;
         background: #ffffff;
         flex-direction: column;
