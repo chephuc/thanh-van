@@ -21,7 +21,7 @@ const Modal = ({ open, onClose }) => {
             X
           </button>
           <div className="modal-content">
-            <h2>Chuyên viên tư vấn Misa Thanh Vân</h2>
+            <h2>Chuyên viên tư vấn Misa Ms.Thanh Vân</h2>
             <br />
             <article className="modal__details">
               <TbPhoneCall className="modal__details-icon" />

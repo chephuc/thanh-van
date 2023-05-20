@@ -39,7 +39,7 @@ const Footer = () => {
           <div className="footer__card__2">
             <h4>Mời Quý khách sử dụng kênh hỗ trợ miễn phí MISA:</h4>
             <p>
-              1. Chat trực tuyến với nhân viên tư vấn MISA:
+              1. Chat trực tuyến với nhân viên tư vấn MISA:&nbsp;
               <a
                 href="https://forum.misa.vn/threads/chat-voi-nhan-vien-misa.67231/"
                 target="_blank"
@@ -49,7 +49,7 @@ const Footer = () => {
               </a>
               <br />
               2. Trao đổi, thảo luận trên Group Cộng đồng người sử dụng phần mềm
-              MISA:
+              MISA:&nbsp;
               <a
                 href="https://forum.misa.vn/threads/moi-tham-gia-group-facebook-cong-dong-ho-tro-mien-phi-misa.36811/"
                 target="_blank"
@@ -59,7 +59,7 @@ const Footer = () => {
               </a>
             </p>
             <h5>
-              Xem các kênh hỗ trợ của MISA tại đây:
+              Xem các kênh hỗ trợ của MISA tại đây:&nbsp;
               <a
                 href="https://mily.vn/hotromisa"
                 target="_blank"
