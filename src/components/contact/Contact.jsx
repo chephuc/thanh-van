@@ -37,7 +37,7 @@ const Contact = () => {
         <div className="contact__options">
           <h2>
             Đăng ký nhận tư vấn, <br />
-            khám phá sức mạnh đột phá của MISA AMIS Kế toán và MISA SME 2023
+            khám phá sức mạnh đột phá của MISA AMIS Kế toán
           </h2>
           <p>
             MISA AMIS kế toán – giải pháp quản trị tài chính kế toán Online: Đơn
@@ -69,7 +69,7 @@ const Contact = () => {
           <input type="email" name="email" required />
           <label for="phone">Số điện thoại</label>
           <input type="text" name="phone" required />
-          <label for="mst">mã số thuế</label>
+          <label for="mst">Mã số thuế</label>
           <input type="text" name="mst" required />
           <label for="city">Tỉnh/Thành phố</label>
           <input type="text" name="city" required />
