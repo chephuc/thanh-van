@@ -1,6 +1,8 @@
 import React from "react";
 import "./footer.css";
 import logo from "../../assets/Logo_MISA_1.png";
+import qr from "../../assets/zalo-qr.jpg";
+import logos from "../../assets/img-footer.png";
 import { TbPhoneCall } from "react-icons/tb";
 import { HiOutlineMail } from "react-icons/hi";
 
@@ -11,19 +13,21 @@ const Footer = () => {
         <article className="footer__card">
           <div className="footer__card__1">
             <img src={logo} alt="" />
-            <h3>Hồ Thị Thanh Vân</h3>
-            <article className="modal__details">
-              <TbPhoneCall className="modal__details-icon" />
-              <div>
-                <p>0902 937 857</p>
-              </div>
-            </article>
-            <article className="modal__details">
-              <HiOutlineMail className="modal__details-icon" />
-              <div>
-                <p>htvan@hcm.misa.com.vn</p>
-              </div>
-            </article>
+            <div className="be-van-info">
+              <h3>Hồ Thị Thanh Vân</h3>
+              <article className="modal__details">
+                <TbPhoneCall className="modal__details-icon" />
+                <div>
+                  <p>0902 937 857</p>
+                </div>
+              </article>
+              <article className="modal__details">
+                <HiOutlineMail className="modal__details-icon" />
+                <div>
+                  <p>htvan@hcm.misa.com.vn</p>
+                </div>
+              </article>
+            </div>
           </div>
           <h4>VĂN PHÒNG ĐẠI DIỆN CÔNG TY CỔ PHẦN MISA TẠI THÀNH PHỐ HCM </h4>
           <p>
@@ -64,9 +68,15 @@ const Footer = () => {
                 https://mily.vn/hotromisa
               </a>
             </h5>
+            <img src={logos} alt="" />
           </div>
         </article>
-        <article className="footer__card"></article>
+        <article className="footer__card">
+          <div className="footer__card__3">
+            <h4>Quét mã QR để liên hệ Zalo</h4>
+            <img src={qr} alt="" />
+          </div>
+        </article>
       </div>
 
       <div className="footer__copyright">

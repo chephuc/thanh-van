@@ -27,7 +27,7 @@ const Header = () => {
       </a>
       <ul className={active}>
         <li className="nav__item">
-          <a href="#about" className="nav__link">
+          <a href="#tong-quan" className="nav__link">
             Tổng quan
           </a>
         </li>

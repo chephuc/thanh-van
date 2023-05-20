@@ -18,6 +18,8 @@ import ic_3 from "../../assets/ic_solution-3.png";
 import ic_5 from "../../assets/ic_solution-5.png";
 import ic_6 from "../../assets/ic_solution-6.png";
 import Modal from "../header/Modal";
+import { TbPhoneCall } from "react-icons/tb";
+import { HiOutlineMail } from "react-icons/hi";
 
 const About = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -38,6 +40,18 @@ const About = () => {
                 Liên hệ tư vấn
               </button>
             </div>
+            <article className="modal__details">
+              <TbPhoneCall className="modal__details-icon" />
+              <div>
+                <p>0902 937 857</p>
+              </div>
+            </article>
+            <article className="modal__details">
+              <HiOutlineMail className="modal__details-icon" />
+              <div>
+                <p>htvan@hcm.misa.com.vn</p>
+              </div>
+            </article>
           </div>
           <div className="about__me">
             <div className="about__me-image">
@@ -46,7 +60,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <div className="container about__container__sub1">
+      <div className="container about__container__sub1" id="tong-quan">
         <h1>
           Phần mềm kế toán Online MISA AMIS hỗ trợ quản trị điều hành, nâng cao
           hiệu quả hoạt động doanh nghiệp

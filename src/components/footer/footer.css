@@ -22,6 +22,14 @@ footer {
 
 .footer__card__1 {
     margin-bottom: 20px;
+
+}
+
+.be-van-info {
+    width: 90%;
+    border: 3px solid #545970;
+    border-radius: 10px;
+    padding: 5%;
 }
 
 .footer__card__1 .modal__details-icon {
@@ -40,8 +48,21 @@ footer {
     color: blue;
 }
 
+.footer__card__2 img{
+    width: 450px;
+}
+
 .footer__copyright {
     margin-top: 20px;
+}
+
+.footer__card__3 img {
+    width: 200px;
+    border: 1px solid #000000;
+}
+
+.footer__card__3 {
+    margin-top: 15%;
 }
 
 @media screen and (max-width: 600px) {
@@ -68,5 +89,13 @@ footer {
 
     .footer__card__1 .modal__details-icon {
         margin-left: 25%;
+    }
+
+    .footer__card__2 img{
+        width: 300px;
+    }
+
+    .be-van-info {
+        width: 100%;
     }
 }
