@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      {/* <Nav/> */}
+      <Nav />
       <About />
       {/* <Sme /> */}
       <Cooperate />

@@ -2,7 +2,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 9vh;
+    height: 60px;
     /* height: 60px; */
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -21,7 +21,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 2rem;
+    gap: 1.8rem;
 }
 
 .nav__menu a {
@@ -46,6 +46,18 @@ header {
     background: rgb(204, 204, 204);
     transition: 0.3s ease-in;
 }
+
+.header-phone {
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: #4262ef;
+}
+
+.header-phone a {
+    color: #4262ef;
+}
+
   
 @media screen and (max-width: 768px) {
     .nav__toggler {
@@ -54,7 +66,7 @@ header {
     }
     .nav__menu {
         position: fixed;
-        top: 8.5vh;
+        top: 58px;
         right: 0;
         height: 50vh;
         width: 100%;

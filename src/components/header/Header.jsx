@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./header.css";
 import Modal from "./Modal";
 import logo from "../../assets/Logo_MISA.png";
-import amis from "../../assets/amis-logo.webp";
-import sme from "../../assets/sme-logo.jpg";
+import { TbPhoneCall } from "react-icons/tb";
 
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -50,6 +49,14 @@ const Header = () => {
           <a href="#contact" className="nav__link">
             Hỗ trợ
           </a>
+        </li>
+        <li className="nav__item">
+          <div className="header-phone">
+            <TbPhoneCall size={30} className="header-phone-icon" />
+            <a className="nav__link">
+              <b>0902 937 857</b>
+            </a>
+          </div>
         </li>
         <li className="nav__item">
           <button
