@@ -32,7 +32,7 @@ header {
 }
 
 .nav__menu a:hover {
-    color: var(--color-primary-variant);
+    color: #4262ef;
 }
 
 .nav__toggler {

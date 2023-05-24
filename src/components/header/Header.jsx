@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header>
-      <a href="#about" className="misa-logo">
+      <a href="#amis" className="misa-logo">
         <img src={logo} alt="" />
       </a>
       <ul className={active}>
