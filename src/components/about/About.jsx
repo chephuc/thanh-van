@@ -58,6 +58,14 @@ const About = () => {
           Phần mềm kế toán Online MISA AMIS hỗ trợ quản trị điều hành, nâng cao
           hiệu quả hoạt động doanh nghiệp
         </h1>
+        <iframe
+          className="amis__video"
+          width="600"
+          height="338"
+          src="https://www.youtube.com/embed/JI1Y_HIhPZE"
+          title="YouTube video player"
+          frameborder="0"
+        ></iframe>
         <div className="about__cards">
           <article className="about__card">
             <div className="about-logo">

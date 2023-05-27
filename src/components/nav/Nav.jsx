@@ -3,7 +3,7 @@ import "./nav.css";
 import Modal from "./Nav_modal";
 
 const Nav = () => {
-  const [openModal, setOpenModal] = useState(false);
+  const [openModal, setOpenModal] = useState(true);
   return (
     <div>
       <nav>
