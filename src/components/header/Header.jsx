@@ -41,7 +41,7 @@ const Header = () => {
           </a>
         </li>
         <li className="nav__item">
-          <a href="#baogia" className="nav__link">
+          <a href="#price" className="nav__link">
             Báo giá
           </a>
         </li>

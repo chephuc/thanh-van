@@ -1,19 +1,154 @@
-#baogia {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+#price {
     background-color: #f4f6ff;
+    /* text-align: center; */
+}
+
+.price {
+    /* background: url(/sites/amis/images/pages/amis-accounting/bg_price.svg) no-repeat center; */
+    background-size: cover
+}
+
+.amis-accounting-title {
     text-align: center;
+    padding-top: 20px;
+    font-size: 26px;
 }
 
-#baogia img {
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.product-wrap {
+    display: flex;
+    margin-top: 60px;
+    background: #fff;
+    border-bottom: solid 5px #96baef;
+    border-radius: 4px;
+    margin: 4% 10%;
 }
 
-#baogia h2, .baogia-sme h2 {
-    padding: 1%;
-    font-size: 28px;
+.product-item {
+    position: relative;
+    width: 25%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #fff
 }
+
+.product-item:nth-child(1),.product-item:nth-child(4) {
+    border-right: solid 1px #cfd8dc
+}
+
+.product-item.recomend {
+    box-shadow: 0 0 8px 3px rgba(0,0,0,.08);
+    z-index: 1;
+    border-right: 0;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    border-bottom: solid 5px #f3a825;
+    border-radius: 4px;
+}
+
+.product-name {
+    font-size: 18px;
+    /* font-family: GoogleSans Bold,Arial,sans-serif; */
+    font-weight: bold;
+    text-align: center
+}
+
+.product-line {
+    position: relative;
+    width: 60px;
+    margin: 6px auto 20px
+}
+
+.product-line:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #c3caf5
+}
+
+.recomend-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.recomend-text span {
+    padding: 5px 10px 5px 20px;
+    font-size: 13px;
+    background: #f3a825 url(/src/assets/ic_star.png) no-repeat 5px 8px;
+    background-size: 10px;
+    border-radius: 0 0 4px 4px;
+    color: #fff
+}
+
+.product-user {
+    text-align: center;
+    padding-bottom: 15px
+}
+
+.product-price {
+    text-align: center;
+    /* font-family: GoogleSans Bold,Arial,sans-serif; */
+    font-weight: bold;
+    font-size: 22px
+}
+
+.product-unit {
+    text-align: center
+}
+
+.cls-buynow {
+    display: flex;
+    justify-content: center
+}
+
+.cls-buynow a {
+    background: #3b50df;
+    border-radius: 4px;
+    padding: 8px 15px;
+    width: 100%;
+    max-width: 180px;
+    color: #fff;
+    text-align: center;
+    margin: 15px 0
+}
+
+.recomend .cls-buynow a {
+    background: #f3a825
+}
+
+ul.product-detail {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+ul.product-detail li {
+    background: url(/src/assets/ic_tick.png) no-repeat left 6px;
+    margin: 0;
+    padding: 0 0 8px 20px
+}
+
+ul.product-detail li.extra-feature {
+    font-weight: bold;
+}
+
+ul.product-detail li.extra-blue {
+    color: #3b50df;
+}
+
+/* ------------------------- báo giá sme ------------------------- */
 
 .baogia-sme {
     margin-top: 20px;
@@ -52,5 +187,34 @@
     }
     .baogia-sme img {
         width: 100%;
+    }
+    .product-wrap {
+        border-bottom: none;
+        background: 0 0;
+        margin-top: 30px;
+        display: grid;
+    }
+
+    .product-detail {
+        display: none;
+    }
+
+    .product-item {
+        border-radius: 4px;
+        border-bottom: solid 5px #96baef;
+        width: 100%;
+        border-right: none!important;
+        padding: 45px 15px 15px;
+        margin: 0;
+    }
+
+    .product-item.recomend {
+        margin-top: 0;
+        margin-bottom: 0;
+        box-shadow: none;
+    }
+
+    .cls-buynow a {
+        width: 150px;
     }
 }

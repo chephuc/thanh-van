@@ -24,6 +24,10 @@
     padding-top: 8%;
 }
 
+.contact-phone {
+    display: none;
+}
+
 .about__content p, .about__content h2, .about__content h3 {
     color: var(--color-white);
 }
@@ -169,6 +173,14 @@
 
     .about__content {
         text-align: center;
+    }
+
+    .contact-phone {
+        display:flex;      
+    }
+
+    .about__content-contact {
+        padding: 0 20%;
     }
 
     .about__cards {

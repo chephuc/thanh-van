@@ -19,6 +19,7 @@ import ic_5 from "../../assets/ic_solution-5.png";
 import ic_6 from "../../assets/ic_solution-6.png";
 import Modal from "../header/Modal";
 import { HiOutlineMail } from "react-icons/hi";
+import { TbPhoneCall } from "react-icons/tb";
 
 const About = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -39,12 +40,20 @@ const About = () => {
                 Liên hệ tư vấn
               </button>
             </div>
-            <article className="modal__details">
-              <HiOutlineMail className="modal__details-icon" />
-              <div>
-                <p>htvan@hcm.misa.com.vn</p>
-              </div>
-            </article>
+            <div className="about__content-contact">
+              <article className="modal__details contact-email">
+                <HiOutlineMail className="modal__details-icon" />
+                <div>
+                  <p>htvan@hcm.misa.com.vn</p>
+                </div>
+              </article>
+              <article className="modal__details contact-phone">
+                <TbPhoneCall className="modal__details-icon" />
+                <div>
+                  <p>0902 937 857</p>
+                </div>
+              </article>
+            </div>
           </div>
           <div className="about__me">
             <div className="about__me-image">
