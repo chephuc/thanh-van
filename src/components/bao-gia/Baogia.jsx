@@ -13,12 +13,22 @@ const Baogia = () => {
     {
       id: 1,
       tabtitle: "Trả phí định kỳ",
-      content: IMG2,
+      Standard_1: "4.450.000",
+      Standard_2: "1.450.000",
+      Professional_1: "5.950.000",
+      Professional_2: "1.950.000",
+      Enterprise_1: "7.450.000",
+      Enterprise_2: "2.450.000",
     },
     {
       id: 2,
       tabtitle: "Trả phí 1 lần",
-      content: IMG3,
+      Standard_1: "7.950.000",
+      Standard_2: "2.550.000",
+      Professional_1: "10.950.000",
+      Professional_2: "3.550.000",
+      Enterprise_1: "13.950.000",
+      Enterprise_2: "4.550.000",
     },
   ];
   const handleTabClick = (id) => {
@@ -232,10 +242,134 @@ const Baogia = () => {
         {tabs.map((tab, i) => (
           <div
             className={
-              currentTab === `${tab.id}` ? "show-content" : "baogia-sme-content"
+              currentTab === `${tab.id}`
+                ? "show-content fade"
+                : "baogia-sme-content"
             }
           >
-            <img src={tab.content} alt="" />
+            {/* <div id="price" class="section-temp price"> */}
+            <div class="container">
+              <div class="sme-product-wrap view-d">
+                <div class="sme-product-item">
+                  <div class="sme-product-name">Standard</div>
+                  <div class="sme-product-user">Bắt đầu kinh doanh</div>
+                  <div className="sme-product-content">
+                    <div class="sme-product-price">
+                      {tab.Standard_1}
+                      <a
+                        className={
+                          currentTab === "1"
+                            ? "show-content"
+                            : "baogia-sme-content"
+                        }
+                      >
+                        /năm
+                      </a>
+                    </div>
+                    <div class="sme-product-unit">
+                      Cho 3 người dùng <br /> Mua thêm mỗi gói 1 người dùng giá
+                      &nbsp;{tab.Standard_2} VND/gói
+                    </div>
+                    <div class="sme-cls-buynow">
+                      <a id="Dungthu-3950" onClick={() => setOpenModal(true)}>
+                        Mua ngay
+                      </a>
+                    </div>
+                  </div>
+                  <ul class="sme-product-detail">
+                    <li>Quỹ, Thủ Quỹ, Ngân hàng</li>
+                    <li>Mua hàng, Bán hàng, Quản lý hoá đơn, Thuế</li>
+                    <li>Kho, Thủ Kho, Công cụ dụng cụ, Tổng hợp</li>
+                    <li>Ngân hàng điện tử (1.000 chứng từ chuyển tiền/năm)</li>
+                    <li>Thuế điện tử</li>
+                  </ul>
+                </div>
+                <div class="sme-product-item recomend">
+                  <div class="sme-recomend-text">
+                    <span>Gói khuyên dùng</span>
+                  </div>
+                  <div class="sme-product-name">Professional</div>
+                  <div class="sme-product-user">Tăng tốc doanh nghiệp</div>
+                  <div className="sme-product-content">
+                    <div class="sme-product-price">
+                      {tab.Professional_1}
+                      <a
+                        className={
+                          currentTab === "1"
+                            ? "show-content"
+                            : "baogia-sme-content"
+                        }
+                      >
+                        /năm
+                      </a>
+                    </div>
+                    <div class="sme-product-unit">
+                      Cho 3 người dùng <br /> Mua thêm mỗi gói 1 người dùng giá
+                      &nbsp;{tab.Professional_2} VND/gói
+                    </div>
+                    <div class="sme-cls-buynow">
+                      <a id="Dungthu-3950" onClick={() => setOpenModal(true)}>
+                        Mua ngay
+                      </a>
+                    </div>
+                  </div>
+                  <ul class="sme-product-detail">
+                    <li>Quỹ, Thủ Quỹ, Ngân hàng</li>
+                    <li>Mua hàng, Bán hàng, Quản lý hoá đơn, Thuế</li>
+                    <li>Kho, Thủ Kho, Công cụ dụng cụ, Tổng hợp</li>
+                    <li>Tài sản cố định</li>
+                    <li>Tiền lương</li>
+                    <li>Hợp đồng</li>
+                    <li>Khế ước vay</li>
+                    <li>Ngân hàng điện tử (1.000 chứng từ chuyển tiền/năm)</li>
+                    <li>Thuế điện tử (MISA mTax)</li>
+                  </ul>
+                </div>
+                <div class="sme-product-item">
+                  <div class="sme-product-name">Enterprise</div>
+                  <div class="sme-product-user">Tăng trưởng toàn diện</div>
+                  <div className="sme-product-content">
+                    <div class="sme-product-price">
+                      {tab.Enterprise_1}
+                      <a
+                        className={
+                          currentTab === "1"
+                            ? "show-content"
+                            : "baogia-sme-content"
+                        }
+                      >
+                        /năm
+                      </a>
+                    </div>
+                    <div class="sme-product-unit">
+                      Cho 3 người dùng <br /> Mua thêm mỗi gói 1 người dùng giá
+                      &nbsp;{tab.Enterprise_2} VND/gói
+                    </div>
+                    <div class="sme-cls-buynow">
+                      <a id="Dungthu-3950" onClick={() => setOpenModal(true)}>
+                        Mua ngay
+                      </a>
+                    </div>
+                  </div>
+                  <ul class="sme-product-detail">
+                    <li>Quỹ, Thủ Quỹ, Ngân hàng</li>
+                    <li>Mua hàng, Bán hàng, Quản lý hoá đơn, Thuế</li>
+                    <li>Kho, Thủ Kho, Công cụ dụng cụ, Tổng hợp</li>
+                    <li>Tài sản cố định</li>
+                    <li>Tiền lương</li>
+                    <li>Thuế</li>
+                    <li>Tổng hợp</li>
+                    <li>Hợp đồng</li>
+                    <li>Khế ước vay</li>
+                    <li>Ngân hàng điện tử (1.000 chứng từ chuyển tiền/năm)</li>
+                    <li>Thuế điện tử (MISA mTax)</li>
+                    <li>Giá thành</li>
+                    <li>Ngân sách</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/* </div> */}
           </div>
         ))}
       </div>

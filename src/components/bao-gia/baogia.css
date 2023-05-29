@@ -3,17 +3,6 @@
     /* text-align: center; */
 }
 
-/* #price img {
-    width: 65%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#price h2 {
-    padding: 20px 0;
-} */
-
 .price {
     /* background: url(/sites/amis/images/pages/amis-accounting/bg_price.svg) no-repeat center; */
     background-size: cover
@@ -165,13 +154,6 @@ ul.product-detail li.extra-blue {
     text-align: center;
 }
 
-.baogia-sme img {
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .baogia-sme h2 {
     padding: 15px 0;
 }
@@ -189,27 +171,160 @@ ul.product-detail li.extra-blue {
 }
 
 .show-content{
-    display: block;
+    display:inline;
+}
+
+.sme-product-wrap {
+    display: flex;
+    margin-top: 60px;
+    background: #fff;
+    border-radius: 4px;
+    margin: 4% 20%;
+    text-align: left;
+}
+
+.sme-product-item {
+    position: relative;
+    width: 35%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    padding-top: 15px;
+    background: #fff;
+    box-shadow: 0 0 8px 3px rgba(0,0,0,.1);
+    border-radius: 4px;
+}
+
+.sme-product-item.recomend {
+    box-shadow: 0 0 8px 3px rgba(0,0,0,.1);
+    z-index: 1;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    border-radius: 4px;
+}
+
+.sme-product-item.recomend a {
+    background: #47ac00;
+    border: none;
+    color: #ffffff;
+}
+
+.sme-product-content{
+    background-color: #f5fbff;
+    padding: 15px 0;
+}
+
+.sme-product-name {
+    font-size: 18px;
+    /* font-family: GoogleSans Bold,Arial,sans-serif; */
+    font-weight: bold;
+    text-align: center;
+    color: #0077c5;
+}
+
+.sme-recomend-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.sme-recomend-text span {
+    padding: 5px 10px 5px 10px;
+    font-size: 13px;
+    background: #47ac00;
+    background-size: 10px;
+    border-radius: 0 0 4px 4px;
+    color: #fff
+}
+
+.sme-product-user {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: #595b63;
+}
+
+.sme-product-price {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.sme-product-price a {
+    background: none!important;
+    color: black!important;
+    font-size: 13px;
+}
+
+.sme-product-unit {
+    font-size: 14px;
+    text-align: center;
+    color: #46474d;
+}
+
+.sme-cls-buynow {
+    display: flex;
+    justify-content: center
+}
+
+.sme-cls-buynow a {
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 8px 15px;
+    width: 100%;
+    max-width: 150px;
+    color: #fff;
+    text-align: center;
+    margin: 15px 0;
+    cursor: pointer;
+    border: 1px solid #0077c5;
+    color: #0077c5;
+}
+
+ul.sme-product-detail {
+    padding: 0 15px;
+    margin-top: 20px;
+    list-style: none;
+}
+
+ul.sme-product-detail li {
+    background: url(/src/assets/ic_tick.png) no-repeat left 6px;
+    padding: 0 0 8px 20px;
+    font-size: 13px;
+}
+
+@keyframes fadeIn {
+    from {
+       opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+ }
+
+.fade {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.4s;
 }
 
 @media screen and (max-width: 700px) {
-    /* #price img {
-        width: 100%;
-    } */
-    /* #price h2 {
-        font-size: 16px;
-    } */
     .baogia-sme img {
         width: 100%;
     }
-    /* .baogia-sme h2 {
-        font-size: 16px;
-    } */
     .product-wrap {
         border-bottom: none;
         background: 0 0;
         margin-top: 30px;
         display: grid;
+        gap: 10px;
     }
 
     .product-detail {
@@ -232,6 +347,38 @@ ul.product-detail li.extra-blue {
     }
 
     .cls-buynow a {
+        width: 150px;
+    }
+    /* --------- sme -----------*/
+
+    .sme-product-wrap {
+        border-bottom: none;
+        background: 0 0;
+        margin-top: 30px;
+        display: grid;
+        gap: 10px;
+    }
+
+    .sme-product-detail {
+        display: none;
+    }
+
+    .sme-product-item {
+        border-radius: 4px;
+        border-bottom: solid 5px #96baef;
+        width: 100%;
+        border-right: none!important;
+        /* padding: 45px 15px 15px; */
+        margin: 0;
+    }
+
+    .sme-product-item.recomend {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 40px;
+    }
+
+    .sme-cls-buynow a {
         width: 150px;
     }
 }
