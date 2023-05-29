@@ -2,6 +2,7 @@ import React from "react";
 import "./contact.css";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const form = useRef();
@@ -16,7 +17,7 @@ const Contact = () => {
       "mWZAhzAL0pNBTxj-j"
     );
 
-    alert("Bạn đã gửi thông tin thành công.");
+    Swal.fire("Bạn đã gửi thông tin thành công.", "", "success");
 
     e.target.reset();
   };
@@ -68,7 +69,12 @@ const Contact = () => {
           <label for="email">Email</label>
           <input type="email" name="email" required />
           <label for="phone">Số điện thoại</label>
-          <input type="text" name="phone" required />
+          <input
+            type="text"
+            pattern="(84|0[3|5|7|8|9])+([0-9]{8})\b"
+            name="phone"
+            required
+          />
           <label for="mst">Mã số thuế</label>
           <input type="text" name="mst" required />
           <label for="city">Tỉnh/Thành phố</label>

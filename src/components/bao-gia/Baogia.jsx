@@ -3,9 +3,11 @@ import IMG1 from "../../assets/bao-gia.png";
 import IMG2 from "../../assets/bao-gia-sme-1.png";
 import IMG3 from "../../assets/bao-gia-sme-2.png";
 import "./baogia.css";
+import Modal from "./ModalBaogia";
 
 const Baogia = () => {
   const [currentTab, setCurrentTab] = useState("1");
+  const [openModal, setOpenModal] = useState(false);
 
   const tabs = [
     {
@@ -24,10 +26,10 @@ const Baogia = () => {
   };
   return (
     <div>
-      <div id="price">
+      {/* <div id="price">
         <h2>Bảng giá phần mềm kế toán Online MISA AMIS</h2>
-        <img src={IMG1} alt="" />
-        {/* <div id="price" class="section-temp price">
+        <img src={IMG1} alt="" /> */}
+      <div id="price" class="section-temp price">
         <div class="container">
           <div class="row">
             <h2 class="col-md-24 amis-accounting-title">
@@ -42,12 +44,7 @@ const Baogia = () => {
                   <div class="product-price">2.950.000</div>
                   <div class="product-unit">(VNĐ/Năm)</div>
                   <div class="cls-buynow">
-                    <a
-                      id="Dungthu-2450"
-                      href="https://store.misa.vn/v2/quote?pid=146"
-                      target="_blank"
-                      rel="noopener"
-                    >
+                    <a id="Dungthu-2450" onClick={() => setOpenModal(true)}>
                       Mua ngay
                     </a>
                   </div>
@@ -73,12 +70,7 @@ const Baogia = () => {
                   <div class="product-price">4.450.000</div>
                   <div class="product-unit">(VNĐ/Năm)</div>
                   <div class="cls-buynow">
-                    <a
-                      id="Dungthu-3950"
-                      href="https://store.misa.vn/v2/quote?pid=146"
-                      target="_blank"
-                      rel="noopener"
-                    >
+                    <a id="Dungthu-3950" onClick={() => setOpenModal(true)}>
                       Mua ngay
                     </a>
                   </div>
@@ -112,12 +104,7 @@ const Baogia = () => {
                   <div class="product-price">5.950.000</div>
                   <div class="product-unit">(VNĐ/Năm)</div>
                   <div class="cls-buynow">
-                    <a
-                      id="Dungthu-5450"
-                      href="https://store.misa.vn/v2/quote?pid=146"
-                      target="_blank"
-                      rel="noopener"
-                    >
+                    <a id="Dungthu-5450" onClick={() => setOpenModal(true)}>
                       Mua ngay
                     </a>
                   </div>
@@ -152,12 +139,7 @@ const Baogia = () => {
                   <div class="product-price">6.950.000</div>
                   <div class="product-unit">(VNĐ/Năm)</div>
                   <div class="cls-buynow">
-                    <a
-                      id="Dungthu-6450"
-                      href="https://store.misa.vn/v2/quote?pid=146"
-                      target="_blank"
-                      rel="noopener"
-                    >
+                    <a id="Dungthu-6450" onClick={() => setOpenModal(true)}>
                       Mua ngay
                     </a>
                   </div>
@@ -193,12 +175,7 @@ const Baogia = () => {
                   <div class="product-price">20.950.000</div>
                   <div class="product-unit">(VNĐ/Năm)</div>
                   <div class="cls-buynow">
-                    <a
-                      id="Dungthu-20450"
-                      href="https://store.misa.vn/v2/quote?pid=146"
-                      target="_blank"
-                      rel="noopener"
-                    >
+                    <a id="Dungthu-20450" onClick={() => setOpenModal(true)}>
                       Mua ngay
                     </a>
                   </div>
@@ -235,8 +212,8 @@ const Baogia = () => {
             </div>
           </div>
         </div>
-      </div> */}
       </div>
+      {/* </div> */}
       <div className="baogia-sme">
         <h2>Bảng giá phần mềm kế toán Offline MISA SME</h2>
         <div className="baogia-sme-tabs">
@@ -262,6 +239,7 @@ const Baogia = () => {
           </div>
         ))}
       </div>
+      <Modal open={openModal} onClose={() => setOpenModal(false)} />
     </div>
   );
 };

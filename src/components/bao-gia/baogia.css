@@ -1,9 +1,9 @@
 #price {
     background-color: #f4f6ff;
-    text-align: center;
+    /* text-align: center; */
 }
 
-#price img {
+/* #price img {
     width: 65%;
     display: block;
     margin-left: auto;
@@ -12,7 +12,7 @@
 
 #price h2 {
     padding: 20px 0;
-}
+} */
 
 .price {
     /* background: url(/sites/amis/images/pages/amis-accounting/bg_price.svg) no-repeat center; */
@@ -130,7 +130,8 @@
     max-width: 180px;
     color: #fff;
     text-align: center;
-    margin: 15px 0
+    margin: 15px 0;
+    cursor: pointer;
 }
 
 .recomend .cls-buynow a {
@@ -192,18 +193,18 @@ ul.product-detail li.extra-blue {
 }
 
 @media screen and (max-width: 700px) {
-    #price img {
+    /* #price img {
         width: 100%;
-    }
-    #price h2 {
+    } */
+    /* #price h2 {
         font-size: 16px;
-    }
+    } */
     .baogia-sme img {
         width: 100%;
     }
-    .baogia-sme h2 {
+    /* .baogia-sme h2 {
         font-size: 16px;
-    }
+    } */
     .product-wrap {
         border-bottom: none;
         background: 0 0;

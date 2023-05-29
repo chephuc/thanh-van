@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./navModal.css";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 
 const Nav_modal = ({ open, onClose }) => {
   const form = useRef();
@@ -14,7 +15,8 @@ const Nav_modal = ({ open, onClose }) => {
     e.preventDefault();
 
     if (!isChecked1 && !isChecked2) {
-      alert("Anh/Chị hãy nhập thông tin cần tư vấn.");
+      // alert("Anh/Chị hãy nhập thông tin cần tư vấn.");
+      Swal.fire("Anh/Chị hãy nhập thông tin cần tư vấn.");
       return false;
     }
 
@@ -25,7 +27,9 @@ const Nav_modal = ({ open, onClose }) => {
       "mWZAhzAL0pNBTxj-j"
     );
 
-    alert("Bạn đã gửi thông tin thành công.");
+    // alert("Bạn đã gửi thông tin thành công.");
+
+    Swal.fire("Bạn đã gửi thông tin thành công.", "", "success");
 
     e.target.reset();
   };
@@ -54,7 +58,12 @@ const Nav_modal = ({ open, onClose }) => {
           <label for="name">Họ và Tên</label>
           <input type="text" name="name" required />
           <label for="sdt">Số điện thoại</label>
-          <input type="text" name="sdt" required />
+          <input
+            type="text"
+            pattern="(84|0[3|5|7|8|9])+([0-9]{8})\b"
+            name="phone"
+            required
+          />
           <label for="email">E-mail</label>
           <input type="email" name="email" required />
           <label>* Anh/Chị mong muốn:</label>
