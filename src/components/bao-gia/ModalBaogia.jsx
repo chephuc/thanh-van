@@ -20,7 +20,7 @@ const Modal = ({ open, onClose }) => {
 
     // alert("Bạn đã gửi thông tin thành công.");
 
-    Swal.fire("Bạn đã gửi thông tin thành công.", "success");
+    Swal.fire("Bạn đã gửi thông tin thành công.", "", "success");
 
     e.target.reset();
   };
