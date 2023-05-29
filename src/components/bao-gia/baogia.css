@@ -1,8 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
-
 #price {
     background-color: #f4f6ff;
-    /* text-align: center; */
+    text-align: center;
+}
+
+#price img {
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#price h2 {
+    padding: 20px 0;
 }
 
 .price {
@@ -162,6 +171,10 @@ ul.product-detail li.extra-blue {
     margin-right: auto;
 }
 
+.baogia-sme h2 {
+    padding: 15px 0;
+}
+
 .baogia-sme-tabs {
     margin-bottom: 20px;
 }
@@ -179,14 +192,17 @@ ul.product-detail li.extra-blue {
 }
 
 @media screen and (max-width: 700px) {
-    #baogia img {
-        width: 80%;
+    #price img {
+        width: 100%;
     }
-    #baogia h2 {
-        font-size: 20px;
+    #price h2 {
+        font-size: 16px;
     }
     .baogia-sme img {
         width: 100%;
+    }
+    .baogia-sme h2 {
+        font-size: 16px;
     }
     .product-wrap {
         border-bottom: none;

@@ -24,32 +24,10 @@ const Baogia = () => {
   };
   return (
     <div>
-      {/* <div id="baogia">
-        <h2>Bảng giá phần mềm kế toán Online MISA AMIS</h2> */}
-      {/* <div className="baogia-amis">
-          <div className="baogia-amis-card">
-            <h3>1234</h3>
-            <p>1234</p>
-          </div>
-          <div className="baogia-amis-card">
-            <h3>1234</h3>
-            <p>1234</p>
-          </div>
-          <div className="baogia-amis-card">
-            <h3>1234</h3>
-            <p>1234</p>
-          </div>
-          <div className="baogia-amis-card">
-            <h3>1234</h3>
-            <p>1234</p>
-          </div>
-          <div className="baogia-amis-card">
-            <h3>1234</h3>
-            <p>1234</p>
-          </div>
-        </div> */}
-      {/* <img src={IMG1} alt="" /> */}
-      <div id="price" class="section-temp price">
+      <div id="price">
+        <h2>Bảng giá phần mềm kế toán Online MISA AMIS</h2>
+        <img src={IMG1} alt="" />
+        {/* <div id="price" class="section-temp price">
         <div class="container">
           <div class="row">
             <h2 class="col-md-24 amis-accounting-title">
@@ -257,10 +235,10 @@ const Baogia = () => {
             </div>
           </div>
         </div>
+      </div> */}
       </div>
-      {/* </div> */}
       <div className="baogia-sme">
-        <h2>Bảng giá phần mềm kế toán Online MISA SME</h2>
+        <h2>Bảng giá phần mềm kế toán Offline MISA SME</h2>
         <div className="baogia-sme-tabs">
           {tabs.map((tab, i) => (
             <button
