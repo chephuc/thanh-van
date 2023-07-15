@@ -1,6 +1,6 @@
 import React from "react";
 import "./modal.css";
-import modal from "../../assets/img-thanh-van.png";
+import modal from "../../assets/img-thanh-van-2.png";
 import { TbPhoneCall } from "react-icons/tb";
 import { HiOutlineMail } from "react-icons/hi";
 import { SiZalo } from "react-icons/si";

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./about.css";
-import ME from "../../assets/logo-thanh-van.png";
+import ME from "../../assets/logo-thanh-van-2.png";
 import img1 from "../../assets/img_reason-1.png";
 import img2 from "../../assets/img_reason-4.png";
 import img3 from "../../assets/img_reason-3.png";
