@@ -50,22 +50,6 @@ const Contact = () => {
           <h2>Đăng ký nhận tư vấn miễn phí phần mềm AMIS Kế toán ngay</h2>
           <label for="name">Họ và Tên</label>
           <input type="text" name="name" required />
-          <label for="role">Chức vụ/vai trò</label>
-          <select name="role" required>
-            <option hidden value="">
-              Vui lòng chọn
-            </option>
-            <option value="CEO/ Founder/ Chủ tịch">
-              CEO/ Founder/ Chủ tịch
-            </option>
-            <option value="Giám đốc (CFO, CTO, Nhân sự, VP)">
-              Giám đốc (CFO, CTO, Nhân sự, VP)
-            </option>
-            <option value="Quản lý">Quản lý</option>
-            <option value="Nhân viên (staff)">Nhân viên (staff)</option>
-            <option value="Học sinh/ Sinh viên">Học sinh/ Sinh viên</option>
-            <option value="Vị trí khác (other)">Vị trí khác (other)</option>
-          </select>
           <label for="email">Email</label>
           <input type="email" name="email" required />
           <label for="phone">Số điện thoại</label>
