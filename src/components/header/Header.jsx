@@ -40,14 +40,14 @@ const Header = () => {
             Hợp tác
           </a>
         </li>
-        <li className="nav__item">
+        {/* <li className="nav__item">
           <a href="#price" className="nav__link">
             Báo giá
           </a>
-        </li>
+        </li> */}
         <li className="nav__item">
           <a href="#contact" className="nav__link">
-            Hỗ trợ
+            Tư Vấn
           </a>
         </li>
         <li className="nav__item">

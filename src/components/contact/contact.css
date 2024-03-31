@@ -18,6 +18,10 @@
     margin-top: 100px;
 }
 
+.contact__options h4 {
+    color: white;
+}
+
 .contact__options p, .contact__options h2 {
     color: var(--color-white);
 }

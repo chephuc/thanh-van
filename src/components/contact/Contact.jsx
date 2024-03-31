@@ -3,6 +3,7 @@ import "./contact.css";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
+import qr from "../../assets/zalo-qr.jpg";
 
 const Contact = () => {
   const form = useRef();
@@ -44,6 +45,12 @@ const Contact = () => {
             MISA AMIS kế toán – giải pháp quản trị tài chính kế toán Online: Đơn
             giản, Thông minh, Chính xác, An toàn
           </p>
+          <article className="footer__card">
+            <div className="footer__card__3">
+              <h4>Quét mã QR để liên hệ Zalo</h4>
+              <img src={qr} alt="" />
+            </div>
+          </article>
         </div>
 
         <form ref={form} onSubmit={sendEmail}>

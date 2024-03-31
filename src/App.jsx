@@ -7,6 +7,7 @@ import Cooperate from "./components/cooperate/Cooperate";
 import Baogia from "./components/bao-gia/Baogia";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Content from "./components/content/Content";
 
 const App = () => {
   return (
@@ -14,10 +15,12 @@ const App = () => {
       <Header />
       <Nav />
       <About />
+      <Contact />
+      <Content/>
       {/* <Sme /> */}
       <Cooperate />
-      <Baogia />
-      <Contact />
+      {/* <Baogia /> */}
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
